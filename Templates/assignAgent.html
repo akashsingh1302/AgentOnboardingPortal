@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block ticketlist %}
+<div
+			class="container border rounded border-2 col-md-6 p-5"
+			style="
+				height: 400px;
+				margin-top: 100px;
+				background-color: f1f1f1;
+			"
+		>
+			<h1 style="text-align: center">AGENT MAPPING</h1>
+			<form class="mt-5">
+				<div class="form-row">
+					<div class="form-group col">
+						<label for="inputEmail4" style="text-align:center">Assigning the agent</label>
+						<select id="inputState" class="form-control">
+							<option selected>Select one Agent</option>
+							<option>Ritika Sengar</option>
+							<option>Abhishek kumar</option>
+							<option>Aditya Motwani</option>
+							<option>Shreyansh Jain</option>
+							<option>Aditya Raj</option>
+						</select>
+					</div>
+				</div>
+                <div class="form-row">
+                <div class="col-md-12 text-center">           
+				<button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+			</form>
+		</div>
+{% endblock %}
